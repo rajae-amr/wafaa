@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>أثر التدريب العملي في تعزيز الكفاءات الرقمية - عرض تقديمي</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles-modern.css">
+    <link rel="stylesheet" href="styles-modern-additions.css">
+    <link rel="stylesheet" href="styles-conclusion.css">
+</head>
+<body>
+    <!-- Progress Bar -->
+    <div class="progress-bar">
+        <div class="progress-fill" id="progressFill"></div>
+    </div>
+
+    <!-- Navigation Controls -->
+    <div class="nav-controls">
+        <button class="nav-btn" id="prevBtn" title="السابق">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+        <div class="slide-counter">
+            <span id="currentSlide">1</span> / <span id="totalSlides">14</span>
+        </div>
+        <button class="nav-btn" id="nextBtn" title="التالي">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+    </div>
+
+    <!-- Fullscreen Button -->
+    <button class="fullscreen-btn" id="fullscreenBtn" title="ملء الشاشة">
+        <i class="fas fa-expand"></i>
+    </button>
+
+    <!-- Slides Container -->
+    <div class="slides-container" id="slidesContainer">
+        
+        <!-- Slide 1: العنوان -->
+        <section class="slide active" data-slide="1">
+            <div class="slide-content">
+                <div class="title-slide">
+                    <div class="university-logo">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h1 class="main-title">أثر التدريب العملي في تعزيز الكفاءات الرقمية</h1>
+                    <h2 class="subtitle">لمعلمات الحلقة الثالثة في مجمع زايد التعليمي - الخران</h2>
+                    <div class="research-badge">
+                        <i class="fas fa-robot"></i>
+                        <span>مشروع بحثي نوعي يركز على أدوات الذكاء الاصطناعي</span>
+                    </div>
+                    
+                    <div class="author-info">
+                        <div class="author-name">
+                            <i class="fas fa-user-graduate"></i>
+                            <span>الطالبة: وفاء الحبسي</span>
+                        </div>
+                        <div class="supervisor-info">
+                            <i class="fas fa-chalkboard-teacher"></i>
+                            <span>المشرفة: د. أسماء الزيتاوي</span>
+                        </div>
+                    </div>
+                    
+                    <div class="academic-year">
+                        <i class="fas fa-calendar-alt"></i>
+                        <span>أبريل 2026</span>
+                    </div>
+                </div>
+            </div>
+            <div class="slide-background"></div>
+        </section>
+
+        <!-- Slide 2: شكر وتقدير -->
+        <section class="slide" data-slide="2">
+            <div class="slide-content">
+                <h2 class="slide-title">
+                    <i class="fas fa-heart"></i>
+                    شكر وتقدير
+                </h2>
+                <div class="thanks-message">
+                    <div class="thanks-card">
+                        <i class="fas fa-graduation-cap"></i>
+                        <p>شكر لأكاديمية الشارقة للتعليم</p>
+                    </div>
+                    <div class="thanks-card">
+                        <i class="fas fa-school"></i>
+                        <p>ولإدارة مجمع زايد التعليمي – الخران</p>
+                    </div>
+                    <div class="thanks-card">
+                        <i class="fas fa-hands-helping"></i>
+                        <p>لتسهيل مهمة البحث الإجرائي</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slide-background"></div>
+        </section>
+
+        <!-- Slide 3: المقدمة -->
+        <section class="slide" data-slide="3">
+            <div class="slide-content">
+                <h2 class="slide-title">
+                    <i class="fas fa-book-open"></i>
+                    المقدمة - لماذا هذا البحث الآن؟
+                </h2>
+                <div class="intro-layout">
+                    <div class="intro-points">
+                        <div class="point-card highlight">
+                            <div class="point-icon">
+                                <i class="fas fa-rocket"></i>
+                            </div>
+                            <h3>التحول الرقمي المتسارع</h3>
+                            <p>في التعليم بدولة الإمارات العربية المتحدة</p>
+                        </div>
+                        <div class="point-card highlight">
+                            <div class="point-icon">
+                                <i class="fas fa-user-cog"></i>
+                            </div>
+                            <h3>ضرورة الانتقال</h3>
+                            <p>من دور "المستخدم للتكنولوجيا" إلى "المتمكن الرقمي" القادر على هندسة التعلم باستخدام الذكاء الاصطناعي</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide-background"></div>
+        </section>
+
+        <!-- Slide 4: مشكلة البحث -->
+        <section class="slide" data-slide="4">
+            <div class="slide-content">
+                <h2 class="slide-title">
+                    <i class="fas fa-exclamation-triangle"></i>
+                    مشكلة البحث - التشخيص الواقعي
+                </h2>
+                <div class="problem-layout">
+                    <div class="main-problem">
+                        <div class="problem-icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <h3>البيان الأساسي</h3>
+                        <p class="problem-statement">ملاحظة تفاوت في المهارات التقنية أدى إلى عدم الاستغلال الأمثل للموارد الرقمية المتاحة في المجمع</p>
+                    </div>
+                    <div class="problem-insight">
+                        <i class="fas fa-lightbulb"></i>
+                        <h3>جوهر المشكلة</h3>
+                        <p>الفجوة تكمن في "التطبيق العملي" لأدوات الذكاء الاصطناعي وليس في المعرفة النظرية بوجودها</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slide-background"></div>
+        </section>
+
+        <!-- Slide 5: سؤال البحث -->
+        <section class="slide" data-slide="5">
+            <div class="slide-content">
+                <h2 class="slide-title">
+                    <i class="fas fa-question"></i>
+                    سؤال البحث
+                </h2>
+                <div class="questions-layout">
+                    <div class="main-question">
+                        <div class="question-icon">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <h3>السؤال الرئيسي</h3>
+                        <p>ما أثر البرنامج التدريبي العملي في تعزيز الكفاءات الرقمية؟</p>
+                    </div>
+                    <div class="measurement-axes">
+                        <h3><i class="fas fa-ruler"></i> محاور القياس</h3>
+                        <div class="axes-grid">
+                            <div class="axis-card">
+                                <i class="fas fa-brain"></i>
+                                <p>المعرفة التقنية</p>
+                            </div>
+                            <div class="axis-card">
+                                <i class="fas fa-tasks"></i>
+                                <p>مهارات التخطيط الرقمي</p>
+                            </div>
+                            <div class="axis-card">
+                                <i class="fas fa-chart-line"></i>
+                                <p>أدوات التقييم الذكي</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide-background"></div>
+        </section>
+
+        <!-- Slide 6: أهمية البحث -->
+        <section class="slide" data-slide="6">
+            <div class="slide-content">
+                <h2 class="slide-title">
+                    <i class="fas fa-star"></i>
+                    أهمية البحث
+                </h2>
+                <div class="importance-grid">
+                    <div class="importance-card highlight">
+                        <i class="fas fa-flag-checkered"></i>
+                        <h3>دعم الاستراتيجية الوطنية</h3>
+                        <p>دعم استراتيجية الإمارات للذكاء الاصطناعي 2031</p>
+                    </div>
+                    <div class="importance-card highlight">
+                        <i class="fas fa-share-alt"></i>
+                        <h3>نموذج قابل للتعميم</h3>
+                        <p>تقديم نموذج تدريبي "إجرائي" يمكن تعميمه على بقية الحلقات التعليمية</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slide-background"></div>
+        </section>
+
+        <!-- Slide 7: منهجية البحث -->
+        <section class="slide" data-slide="7">
+            <div class="slide-content">
+                <h2 class="slide-title">
+                    <i class="fas fa-flask"></i>
+                    منهجية البحث - البيانات التقنية
+                </h2>
+                <div class="methodology-grid">
+                    <div class="method-card">
+                        <i class="fas fa-chart-bar"></i>
+                        <h3>المنهج</h3>
+                        <p>كمي (إحصائي) - تصميم قبلي وبعدي</p>
+                    </div>
+                    <div class="method-card highlight">
+                        <i class="fas fa-users"></i>
+                        <h3>العينة (بيان هام)</h3>
+                        <p><strong>12 معلمة</strong> يغطين <strong>8 تخصصات</strong> علمية وأدبية</p>
+                        <span class="note">(لضمان شمولية النتائج)</span>
+                    </div>
+                    <div class="method-card">
+                        <i class="fas fa-clipboard-check"></i>
+                        <h3>الأداة</h3>
+                        <p>استبانة إلكترونية خضعت لاختبار الصدق والثبات</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slide-background"></div>
+        </section>
+
+        <!-- Slide 7.5: إحصائيات العينة -->
+        <section class="slide" data-slide="7.5">
+            <div class="slide-content">
+                <h2 class="slide-title">
+                    <i class="fas fa-chart-pie"></i>
+                    إحصائيات عينة الدراسة - نقطة القوة في الشمولية
+                </h2>
+                <div class="sample-stats-grid">
+                    <div class="stat-box highlight">
+                        <i class="fas fa-users"></i>
+                        <h3>حجم العينة</h3>
+                        <div class="big-number">12</div>
+                        <p>معلمة (بعد تنقيح البيانات)</p>
+                    </div>
+                    <div class="stat-box highlight">
+                        <i class="fas fa-book-open"></i>
+                        <h3>التنوع التخصصي</h3>
+                        <div class="big-number">8</div>
+                        <p>تخصصات مختلفة</p>
+                        <span class="note-small">عربي، إنجليزي، رياضيات، علوم، كيمياء، فيزياء، أحياء، تربية فنية</span>
+                    </div>
+                    <div class="stat-box highlight">
+                        <i class="fas fa-clock"></i>
+                        <h3>سنوات الخبرة</h3>
+                        <div class="big-number">1-25</div>
+                        <p>سنة خبرة</p>
+                        <span class="note-small">البرنامج ناسب جميع الفئات المهنية</span>
+                    </div>
+                    <div class="stat-box highlight">
+                        <i class="fas fa-check-circle"></i>
+                        <h3>معامل ألفا كرونباخ</h3>
+                        <div class="big-number">0.89</div>
+                        <p>ثبات الأداة</p>
+                        <span class="note-small">قيمة مرتفعة جداً تعكس دقة القياس</span>
+                    </div>
+                </div>
+            </div>
+            <div class="slide-background"></div>
+        </section>
+
+        <!-- Slide 8: إجراءات التطبيق -->
+        <section class="slide" data-slide="8">
+            <div class="slide-content">
+                <h2 class="slide-title">
+                    <i class="fas fa-tasks"></i>
+                    إجراءات التطبيق - البرنامج التدريبي (جوهر العمل)
+                </h2>
+                <div class="implementation-layout">
+                    <div class="impl-card highlight">
+                        <i class="fas fa-calendar-alt"></i>
+                        <h3>الخطة</h3>
+                        <p><strong>6 جلسات تدريبية</strong> (12 ساعة معتمدة)</p>
+                    </div>
+                    <div class="impl-card highlight">
+                        <i class="fas fa-hands-helping"></i>
+                        <h3>التركيز العملي</h3>
+                        <p>لم يكن مجرد عرض، بل "مشاغل تطبيقية" شملت:</p>
+                    </div>
+                </div>
+                <div class="activities-grid">
+                    <div class="activity-item">
+                        <i class="fas fa-magic"></i>
+                        <p>تصميم محتوى تفاعلي (أدوات مثل MagicSchool AI)</p>
+                    </div>
+                    <div class="activity-item">
+                        <i class="fas fa-clipboard-check"></i>
+                        <p>بناء اختبارات ذكية قصيرة</p>
+                    </div>
+                    <div class="activity-item">
+                        <i class="fas fa-robot"></i>
+                        <p>أتمتة المهام الإدارية للمعلمة</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slide-background"></div>
+        </section>
+
+        <!-- Slide 9: أداة جمع البيانات -->
+        <section class="slide" data-slide="9">
+            <div class="slide-content">
+                <h2 class="slide-title">
+                    <i class="fas fa-clipboard-list"></i>
+                    أداة جمع البيانات
+                </h2>
+                <div class="data-collection-grid">
+                    <div class="data-card highlight">
+                        <i class="fas fa-file-alt"></i>
+                        <h3>الاستبانة الرقمية</h3>
+                        <p>مكونة من <strong>24 بنداً</strong> موزعة على <strong>3 محاور</strong></p>
+                    </div>
+                    <div class="data-card">
+                        <i class="fas fa-chart-line"></i>
+                        <h3>التطبيق القبلي</h3>
+                        <p>قياس <strong>خط الأساس</strong></p>
+                    </div>
+                    <div class="data-card">
+                        <i class="fas fa-trophy"></i>
+                        <h3>التطبيق البعدي</h3>
+                        <p>قياس <strong>نمو الكفاءة</strong></p>
+                    </div>
+                </div>
+            </div>
+            <div class="slide-background"></div>
+        </section>
+
+        <!-- Slide 10: النتائج (1) -->
+        <section class="slide" data-slide="10">
+            <div class="slide-content">
+                <h2 class="slide-title">
+                    <i class="fas fa-chart-bar"></i>
+                    النتائج - الكفاءات الرقمية (قبل/بعد)
+                </h2>
+                <div class="results-detailed">
+                    <h3 class="results-subtitle">أبرز التحسينات في الكفاءات الرقمية</h3>
+                    <div class="competency-bars">
+                        <div class="comp-item">
+                            <div class="comp-label">التواصل الرقمي مع الطالبات</div>
+                            <div class="comp-change">+1.34</div>
+                            <div class="comp-bar-container">
+                                <div class="comp-bar before" style="width: 61.6%;">3.08</div>
+                                <div class="comp-bar after" style="width: 88.4%;">4.42</div>
+                            </div>
+                        </div>
+                        <div class="comp-item">
+                            <div class="comp-label">الشعور بالتمكن التكنولوجي</div>
+                            <div class="comp-change">+1.25</div>
+                            <div class="comp-bar-container">
+                                <div class="comp-bar before" style="width: 68.4%;">3.42</div>
+                                <div class="comp-bar after" style="width: 93.4%;">4.67</div>
+                            </div>
+                        </div>
+                        <div class="comp-item">
+                            <div class="comp-label">أدوات التقييم الإلكتروني</div>
+                            <div class="comp-change">+1.00</div>
+                            <div class="comp-bar-container">
+                                <div class="comp-bar before" style="width: 66.6%;">3.33</div>
+                                <div class="comp-bar after" style="width: 86.6%;">4.33</div>
+                            </div>
+                        </div>
+                        <div class="comp-item">
+                            <div class="comp-label">تصميم الدروس الرقمية</div>
+                            <div class="comp-change">+0.84</div>
+                            <div class="comp-bar-container">
+                                <div class="comp-bar before" style="width: 71.6%;">3.58</div>
+                                <div class="comp-bar after" style="width: 88.4%;">4.42</div>
+                            </div>
+                        </div>
+                        <div class="comp-item">
+                            <div class="comp-label">توظيف المنصات التعليمية</div>
+                            <div class="comp-change">+0.58</div>
+                            <div class="comp-bar-container">
+                                <div class="comp-bar before" style="width: 75%;">3.75</div>
+                                <div class="comp-bar after" style="width: 86.6%;">4.33</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="results-note">
+                        <i class="fas fa-info-circle"></i>
+                        <p>المقياس من 1-5 | القيم الموجبة تعني تحسناً</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slide-background"></div>
+        </section>
+
+        <!-- Slide 11: النتائج (2) -->
+        <section class="slide" data-slide="11">
+            <div class="slide-content">
+                <h2 class="slide-title">
+                    <i class="fas fa-trophy"></i>
+                    النتائج - أثر التدريب (تقييم المعلمات)
+                </h2>
+                <div class="impact-results">
+                    <div class="impact-intro">
+                        <p class="highlight-text">تقييم إيجابي مرتفع جداً للتدريب العملي</p>
+                    </div>
+                    <div class="impact-grid">
+                        <div class="impact-card top-rated">
+                            <div class="impact-score">4.92</div>
+                            <i class="fas fa-laptop-code"></i>
+                            <p>زاد من قدرتي على تصميم دروس رقمية فعالة</p>
+                        </div>
+                        <div class="impact-card">
+                            <div class="impact-score">4.83</div>
+                            <i class="fas fa-cloud"></i>
+                            <p>ساعدني على توظيف المنصات التعليمية</p>
+                        </div>
+                        <div class="impact-card">
+                            <div class="impact-score">4.83</div>
+                            <i class="fas fa-heart"></i>
+                            <p>عزز ثقتي في استخدام التكنولوجيا</p>
+                        </div>
+                        <div class="impact-card">
+                            <div class="impact-score">4.83</div>
+                            <i class="fas fa-clipboard-check"></i>
+                            <p>أستطيع تقييم تعلم الطالبات إلكترونياً</p>
+                        </div>
+                        <div class="impact-card">
+                            <div class="impact-score">4.75</div>
+                            <i class="fas fa-tools"></i>
+                            <p>أستخدم أدوات رقمية جديدة</p>
+                        </div>
+                        <div class="impact-card">
+                            <div class="impact-score">4.50</div>
+                            <i class="fas fa-comments"></i>
+                            <p>زاد من قدرتي على التواصل الرقمي</p>
+                        </div>
+                    </div>
+                    <div class="key-achievement">
+                        <i class="fas fa-star"></i>
+                        <p><strong>100%</strong> من المعلمات أصبحن قادرات على إنتاج مورد تعليمي رقمي باستخدام AI</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slide-background"></div>
+        </section>
+
+        <!-- Slide 12: المناقشة -->
+        <section class="slide" data-slide="12">
+            <div class="slide-content">
+                <h2 class="slide-title">
+                    <i class="fas fa-comments"></i>
+                    المناقشة - التفسير العلمي
+                </h2>
+                <div class="discussion-layout">
+                    <div class="discussion-card highlight">
+                        <i class="fas fa-question-circle"></i>
+                        <h3>لماذا نجح البرنامج؟</h3>
+                        <p>بسبب اعتماد <strong>"التدريب بالأقران"</strong> و<strong>"التطبيق الفوري"</strong></p>
+                    </div>
+                    <div class="discussion-card highlight">
+                        <i class="fas fa-link"></i>
+                        <h3>الربط بالأدبيات</h3>
+                        <p>النتائج تتفق مع التوجهات الحديثة التي تؤكد أن <strong>التدريب المدمج بالممارسة</strong> هو الأكثر استدامة</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slide-background"></div>
+        </section>
+
+        <!-- Slide 13: التوصيات -->
+        <section class="slide" data-slide="13">
+            <div class="slide-content">
+                <h2 class="slide-title">
+                    <i class="fas fa-hand-point-right"></i>
+                    التوصيات - المقترحات المستقبلية
+                </h2>
+                <div class="recommendations-grid">
+                    <div class="rec-card highlight">
+                        <i class="fas fa-box"></i>
+                        <h3>حقيبة تدريبية رقمية</h3>
+                        <p>تحويل البرنامج التدريبي إلى "حقيبة تدريبية رقمية" متاحة لجميع معلمات المجمع</p>
+                    </div>
+                    <div class="rec-card highlight">
+                        <i class="fas fa-clock"></i>
+                        <h3>ساعة ابتكار رقمي</h3>
+                        <p>تخصيص "ساعة ابتكار رقمي" أسبوعية لتبادل الخبرات بين المعلمات</p>
+                    </div>
+                    <div class="rec-card highlight">
+                        <i class="fas fa-search"></i>
+                        <h3>دراسات مستقبلية</h3>
+                        <p>إجراء دراسات حول أثر هذه الكفاءات على "تحصيل الطلاب" مباشرة</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slide-background"></div>
+        </section>
+
+        <!-- Slide 14: الخاتمة -->
+        <section class="slide conclusion-special" data-slide="14">
+            <div class="slide-content">
+                <div class="conclusion-slide-new">
+                    <!-- Animated Background Elements -->
+                    <div class="conclusion-bg-elements">
+                        <div class="floating-circle circle-1"></div>
+                        <div class="floating-circle circle-2"></div>
+                        <div class="floating-circle circle-3"></div>
+                    </div>
+                    
+                    <!-- Main Content -->
+                    <div class="conclusion-header">
+                        <div class="conclusion-icon-wrapper">
+                            <div class="icon-glow"></div>
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h2 class="conclusion-title-new">الخاتمة</h2>
+                    </div>
+                    
+                    <div class="conclusion-content-box">
+                        <div class="key-message">
+                            <div class="message-icon">
+                                <i class="fas fa-infinity"></i>
+                            </div>
+                            <p class="message-text">
+                                <span class="highlight-word">"الكفاءة الرقمية"</span> هي رحلة مستمرة
+                            </p>
+                        </div>
+                        
+                        <div class="research-impact">
+                            <div class="impact-line"></div>
+                            <p class="impact-text">
+                                هذا البحث خطوة نحو تمكين المعلم الإماراتي من 
+                                <span class="highlight-word">ريادة التعليم الذكي</span>
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="conclusion-stats-mini">
+                        <div class="mini-stat">
+                            <div class="stat-icon"><i class="fas fa-users"></i></div>
+                            <div class="stat-value">12</div>
+                            <div class="stat-label">معلمة</div>
+                        </div>
+                        <div class="mini-stat">
+                            <div class="stat-icon"><i class="fas fa-chart-line"></i></div>
+                            <div class="stat-value">100%</div>
+                            <div class="stat-label">نجاح</div>
+                        </div>
+                        <div class="mini-stat">
+                            <div class="stat-icon"><i class="fas fa-star"></i></div>
+                            <div class="stat-value">4.92</div>
+                            <div class="stat-label">تقييم</div>
+                        </div>
+                    </div>
+                    
+                    <div class="thank-you-new">
+                        <div class="thank-divider"></div>
+                        <h3 class="thank-text">شكراً لحسن استماعكم</h3>
+                        <div class="hearts-animation">
+                            <i class="fas fa-heart heart-1"></i>
+                            <i class="fas fa-heart heart-2"></i>
+                            <i class="fas fa-heart heart-3"></i>
+                        </div>
+                        <div class="contact-info">
+                            <p class="presenter-name">الباحثة: وفاء الحبسي</p>
+                            <p class="supervisor-name">إشراف: د. أسماء الزيتاوي</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide-background conclusion-bg"></div>
+        </section>
+        
+    </div>
+
+    <!-- Slide Indicators -->
+    <div class="slide-indicators" id="slideIndicators"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script-modern.js"></script>
+</body>
+</html>
