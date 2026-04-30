@@ -16,7 +16,8 @@ export const SLIDES_DATA: Slide[] = [
   { id: 12, name: 'ملخص النتائج', title: 'ملخص النتائج' },
   { id: 13, name: 'المناقشة', title: 'المناقشة' },
   { id: 14, name: 'التوصيات', title: 'التوصيات' },
-  { id: 15, name: 'الخاتمة', title: 'الخاتمة' }
+  { id: 15, name: 'الخاتمة', title: 'الخاتمة' },
+  { id: 16, name: 'معلومات الباحثة', title: 'معلومات الباحثة' }
 ]
 
 export const PRESENTER_INFO = {

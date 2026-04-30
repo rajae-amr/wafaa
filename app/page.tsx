@@ -25,7 +25,8 @@ import {
   ResultsSummarySlide,
   DiscussionSlide,
   RecommendationsSlide,
-  ConclusionSlide 
+  ConclusionSlide, 
+  ResearcherSlide 
 } from '@/components/slides'
 
 export default function Presentation() {
@@ -75,6 +76,8 @@ export default function Presentation() {
         return <RecommendationsSlide />
       case 15:
         return <ConclusionSlide />
+      case 16:
+        return <ResearcherSlide />
       default:
         return (
           <div className="slide-background">
