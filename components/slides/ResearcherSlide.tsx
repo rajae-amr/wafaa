@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { User, GraduationCap, BookOpen, BadgeCheck } from 'lucide-react'
+import { User, GraduationCap, BookOpen, BadgeCheck, Award, Sparkles, Brain, Users } from 'lucide-react'
 import { PRESENTER_INFO } from '@/constants/slides'
 import { Card } from '@/components/ui/Card'
 
@@ -61,10 +61,18 @@ export default function ResearcherSlide() {
                       initial={{ x: 20, opacity: 0 }}
                       animate={{ x: 0, opacity: 1 }}
                       transition={{ delay: 0.5, duration: 0.5 }}
-                      className="text-gray-700 font-semibold"
+                      className="text-gray-700 font-semibold text-lg"
                     >
-                      باحثة تربوية
+                      معلمة لغة إنجليزية | باحثة تربوية
                     </motion.div>
+                    <motion.p
+                      initial={{ x: 20, opacity: 0 }}
+                      animate={{ x: 0, opacity: 1 }}
+                      transition={{ delay: 0.55, duration: 0.5 }}
+                      className="text-sm text-gray-600 leading-relaxed max-w-2xl"
+                    >
+                      مؤهلة تمتلك مهارات متقدمة في توظيف التكنولوجيا والذكاء الاصطناعي في التعليم، قادرة على تصميم بيئة تعليمية تفاعلية مبتكرة
+                    </motion.p>
                   </div>
                 </div>
 
@@ -88,14 +96,50 @@ export default function ResearcherSlide() {
             </div>
           </motion.div>
 
+          {/* المؤهلات والشهادات */}
+          <motion.div
+            initial={{ y: 20, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ delay: 0.65, duration: 0.6 }}
+          >
+            <Card delay={0.65}>
+              <div className="space-y-4">
+                <div className="flex items-center gap-3">
+                  <div className="p-3 bg-gradient-to-br from-emerald-500 to-emerald-600 rounded-xl shadow-lg">
+                    <Award className="w-6 h-6 text-white" />
+                  </div>
+                  <div className="text-xl font-black text-gray-800">المؤهلات والشهادات المهنية</div>
+                </div>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                  <div className="flex items-start gap-2 p-3 bg-blue-50 rounded-lg border border-blue-100">
+                    <BadgeCheck className="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" />
+                    <span className="text-sm font-semibold text-gray-800">الرخصة المهنية للمعلمين</span>
+                  </div>
+                  <div className="flex items-start gap-2 p-3 bg-purple-50 rounded-lg border border-purple-100">
+                    <Sparkles className="w-5 h-5 text-purple-600 flex-shrink-0 mt-0.5" />
+                    <span className="text-sm font-semibold text-gray-800">دبلوم في القيادة التربوية</span>
+                  </div>
+                  <div className="flex items-start gap-2 p-3 bg-indigo-50 rounded-lg border border-indigo-100">
+                    <Brain className="w-5 h-5 text-indigo-600 flex-shrink-0 mt-0.5" />
+                    <span className="text-sm font-semibold text-gray-800">دبلوم في الذكاء الاصطناعي في التعليم</span>
+                  </div>
+                  <div className="flex items-start gap-2 p-3 bg-sky-50 rounded-lg border border-sky-100">
+                    <Users className="w-5 h-5 text-sky-600 flex-shrink-0 mt-0.5" />
+                    <span className="text-sm font-semibold text-gray-800">دبلوم تدريب المدرب المحترف (TOT) المعزز بالذكاء الاصطناعي – معتمد دولياً</span>
+                  </div>
+                </div>
+              </div>
+            </Card>
+          </motion.div>
+
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
             <motion.div
               initial={{ y: 20, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
-              transition={{ delay: 0.65, duration: 0.6 }}
+              transition={{ delay: 0.75, duration: 0.6 }}
               className="lg:col-span-1"
             >
-              <Card className="h-full" delay={0.65}>
+              <Card className="h-full" delay={0.75}>
                 <div className="space-y-4 text-right">
                   <div className="flex items-center gap-3">
                     <div className="p-3 bg-gradient-to-br from-sky-500 to-sky-600 rounded-xl shadow-lg">
@@ -111,10 +155,10 @@ export default function ResearcherSlide() {
             <motion.div
               initial={{ y: 20, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
-              transition={{ delay: 0.75, duration: 0.6 }}
+              transition={{ delay: 0.85, duration: 0.6 }}
               className="lg:col-span-2"
             >
-              <Card className="h-full" delay={0.75}>
+              <Card className="h-full" delay={0.85}>
                 <div className="space-y-4 text-right">
                   <div className="flex items-center gap-3">
                     <div className="p-3 bg-gradient-to-br from-indigo-500 to-indigo-600 rounded-xl shadow-lg">
@@ -139,7 +183,7 @@ export default function ResearcherSlide() {
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ delay: 1, duration: 0.6 }}
+            transition={{ delay: 1.1, duration: 0.6 }}
             className="text-center text-gray-600 font-semibold"
           >
             شكرًا لحسن الاستماع

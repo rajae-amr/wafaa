@@ -117,18 +117,18 @@ export default function TitleSlide() {
             <div className="absolute inset-0 bg-gradient-to-r from-blue-600 via-blue-500 to-sky-500 opacity-20 blur-3xl" />
             
             {/* Title */}
-            <h1 className="relative text-6xl md:text-7xl lg:text-8xl font-black mb-4">
-              <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-blue-500 to-sky-500 animate-gradient-shift">
+            <h3 className="relative text-3xl md:text-4xl lg:text-5xl font-black mb-4">
+              <span className="block text-transparent bg-clip-text bg-blue-600 animate-gradient-shift">
                 {PRESENTER_INFO.title}
               </span>
-            </h1>
+            </h3>
             
             {/* Subtitle with Animation */}
             <motion.h2
               initial={{ y: 30, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ delay: 0.6, duration: 0.8 }}
-              className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-700 leading-tight"
+              className="text-xl md:text-2xl lg:text-3xl font-bold text-gray-700 leading-tight"
             >
               {PRESENTER_INFO.subtitle}
             </motion.h2>

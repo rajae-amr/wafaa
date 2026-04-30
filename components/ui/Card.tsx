@@ -58,20 +58,20 @@ interface StatCardProps {
 
 export function StatCard({ icon: Icon, value, label, delay = 0, color = 'blue' }: StatCardProps) {
   const colorClasses = {
-    blue: 'from-blue-500 to-blue-600 bg-blue-50',
-    green: 'from-green-500 to-green-600 bg-green-50',
-    sky: 'from-sky-500 to-sky-600 bg-sky-50',
-    indigo: 'from-indigo-500 to-indigo-600 bg-indigo-50',
+    blue: 'text-blue-600 bg-blue-50',
+    green: 'text-green-600 bg-green-50',
+    sky: 'text-sky-600 bg-sky-50',
+    indigo: 'text-indigo-600 bg-indigo-50',
   }
 
   return (
     <Card delay={delay}>
       <div className="flex items-center gap-4">
         <div className={`p-3 ${colorClasses[color as keyof typeof colorClasses].split(' ')[1]} rounded-xl`}>
-          <Icon className={`w-6 h-6 bg-gradient-to-br ${colorClasses[color as keyof typeof colorClasses].split(' ')[0]} bg-clip-text text-transparent`} />
+          <Icon className={`w-6 h-6 ${colorClasses[color as keyof typeof colorClasses].split(' ')[0]}`} />
         </div>
         <div>
-          <div className={`text-3xl font-black bg-gradient-to-r ${colorClasses[color as keyof typeof colorClasses].split(' ')[0]} bg-clip-text text-transparent`}>
+          <div className={`text-3xl font-black ${colorClasses[color as keyof typeof colorClasses].split(' ')[0]}`}>
             {value}
           </div>
           <div className="text-sm text-gray-600 font-medium">{label}</div>

@@ -54,11 +54,23 @@ export default function TrainingImpactSlide() {
     return 3
   }
   
-  const getColor = (value: number) => {
-    if (value >= 4.8) return 'emerald'
-    if (value >= 4.7) return 'green'
-    if (value >= 4.5) return 'blue'
-    return 'indigo'
+  const getColorClasses = (value: number) => {
+    if (value >= 4.8) return {
+      badge: 'bg-gradient-to-r from-emerald-500 to-emerald-600',
+      progress: 'bg-gradient-to-r from-emerald-400 to-emerald-600'
+    }
+    if (value >= 4.7) return {
+      badge: 'bg-gradient-to-r from-green-500 to-green-600',
+      progress: 'bg-gradient-to-r from-green-400 to-green-600'
+    }
+    if (value >= 4.5) return {
+      badge: 'bg-gradient-to-r from-blue-500 to-blue-600',
+      progress: 'bg-gradient-to-r from-blue-400 to-blue-600'
+    }
+    return {
+      badge: 'bg-gradient-to-r from-indigo-500 to-indigo-600',
+      progress: 'bg-gradient-to-r from-indigo-400 to-indigo-600'
+    }
   }
 
   return (
@@ -127,7 +139,7 @@ export default function TrainingImpactSlide() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 max-w-7xl mx-auto mb-6">
             {impactData.map((item, index) => {
               const stars = getStars(item.value)
-              const color = getColor(item.value)
+              const colorClasses = getColorClasses(item.value)
               const percentage = (item.value / 5) * 100
               
               return (
@@ -152,7 +164,7 @@ export default function TrainingImpactSlide() {
                   
                   {/* القيمة */}
                   <div className="flex justify-center mb-3">
-                    <div className={`px-5 py-2 rounded-full font-black text-2xl bg-gradient-to-r from-${color}-500 to-${color}-600 text-white shadow-md`}>
+                    <div className={`px-5 py-2 rounded-full font-black text-2xl ${colorClasses.badge} text-white shadow-md`}>
                       {item.value.toFixed(2)}
                     </div>
                   </div>
@@ -163,7 +175,7 @@ export default function TrainingImpactSlide() {
                       initial={{ width: 0 }}
                       animate={{ width: `${percentage}%` }}
                       transition={{ delay: 0.9 + index * 0.05 + 0.3, duration: 0.6 }}
-                      className={`h-full bg-gradient-to-r from-${color}-400 to-${color}-600 rounded-full flex items-center justify-end pr-1`}
+                      className={`h-full ${colorClasses.progress} rounded-full flex items-center justify-end pr-1`}
                     >
                       <span className="text-xs font-bold text-white">{percentage.toFixed(0)}%</span>
                     </motion.div>
