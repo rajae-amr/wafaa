@@ -8,16 +8,16 @@ interface SlideLogoProps {
 
 export default function SlideLogo({ position = 'top-right', size = 'md' }: SlideLogoProps) {
   const positions = {
-    'top-left': 'top-8 left-8',
-    'top-right': 'top-8 right-8',
-    'bottom-left': 'bottom-8 left-8',
-    'bottom-right': 'bottom-8 right-8',
+    'top-left': 'top-4 left-4 md:top-8 md:left-8',
+    'top-right': 'top-4 right-4 md:top-8 md:right-8',
+    'bottom-left': 'bottom-4 left-4 md:bottom-8 md:left-8',
+    'bottom-right': 'bottom-4 right-4 md:bottom-8 md:right-8',
   }
 
   const sizes = {
-    sm: 'w-16 h-16',
-    md: 'w-20 h-20',
-    lg: 'w-24 h-24',
+    sm: 'w-12 h-12 md:w-16 md:h-16',
+    md: 'w-14 h-14 md:w-20 md:h-20',
+    lg: 'w-16 h-16 md:w-24 md:h-24',
   }
 
   return (
