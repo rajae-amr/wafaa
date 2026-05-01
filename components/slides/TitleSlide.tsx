@@ -211,7 +211,7 @@ export default function TitleSlide() {
             {/* Stats/Badges */}
             <div className="flex items-center gap-2 px-4 py-2 bg-blue-50 rounded-full border border-blue-200">
               <div className="w-2 h-2 bg-blue-500 rounded-full animate-pulse" />
-              <span className="text-sm font-semibold text-blue-700">بحث علمي</span>
+              <span className="text-sm font-semibold text-blue-700">بحث اجرائي</span>
             </div>
             <div className="flex items-center gap-2 px-4 py-2 bg-sky-50 rounded-full border border-sky-200">
               <div className="w-2 h-2 bg-sky-500 rounded-full animate-pulse" />

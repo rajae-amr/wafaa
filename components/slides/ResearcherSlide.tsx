@@ -83,7 +83,7 @@ export default function ResearcherSlide() {
                   className="flex flex-wrap items-center gap-3 justify-start md:justify-end"
                 >
                   <div className="px-4 py-2 rounded-full bg-blue-50 border border-blue-200 text-blue-700 font-semibold text-sm">
-                    بحث علمي
+                    بحث اجرائي
                   </div>
                   <div className="px-4 py-2 rounded-full bg-sky-50 border border-sky-200 text-sky-700 font-semibold text-sm">
                     دولة الإمارات

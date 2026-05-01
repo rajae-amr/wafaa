@@ -19,6 +19,10 @@ import {
   MethodologySlide,
   ImplementationSlide,
   DataCollectionSlide,
+  DataMethodologySlide,
+  DetailedResultsTable1Slide,
+  DetailedResultsTable2Slide,
+  DetailedResultsTable3Slide,
   DigitalCompetenciesSlide,
   ChallengesSlide,
   TrainingImpactSlide,
@@ -63,20 +67,28 @@ export default function Presentation() {
       case 8:
         return <DataCollectionSlide />
       case 9:
-        return <DigitalCompetenciesSlide />
+        return <DataMethodologySlide />
       case 10:
-        return <ChallengesSlide />
+        return <DetailedResultsTable1Slide />
       case 11:
-        return <TrainingImpactSlide />
+        return <DetailedResultsTable2Slide />
       case 12:
-        return <ResultsSummarySlide />
+        return <DetailedResultsTable3Slide />
       case 13:
-        return <DiscussionSlide />
+        return <DigitalCompetenciesSlide />
       case 14:
-        return <RecommendationsSlide />
+        return <ChallengesSlide />
       case 15:
-        return <ConclusionSlide />
+        return <TrainingImpactSlide />
       case 16:
+        return <ResultsSummarySlide />
+      case 17:
+        return <DiscussionSlide />
+      case 18:
+        return <RecommendationsSlide />
+      case 19:
+        return <ConclusionSlide />
+      case 20:
         return <ResearcherSlide />
       default:
         return (
